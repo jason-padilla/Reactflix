@@ -1,0 +1,220 @@
+.navbarScrolledBody {
+  width: 100%;
+  color:white;
+  position: fixed;
+  z-index: 99;
+  top:0;
+  background-color:#0b0b0b;
+}
+.navbarBody {
+  width: 100%;
+  color:white;
+  position: fixed;
+  z-index: 99;
+  top:0;
+  background: linear-gradient(to top,transparent 0%, rgb(0,0,0,0.6) 50%); 
+}
+.reactflixLogo {
+  color: #5FE3F2;
+  margin-right: 30px;
+}
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+  height: 70px;
+}
+.navbarContainer .left {
+  display: flex;
+  align-items: center;
+}
+.navbarContainer .left a {
+  margin-right: 20px;
+  font-size: 16px;
+  color:white;
+  text-decoration: none;
+}
+.navbarContainer .left a:hover {
+  color:#b3b3b3;
+}
+.leftCollapsed {
+  display: none;
+}
+.leftCollapsed:hover .dropdownOptions {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 5px;
+}
+.dropdownOptions {
+  display: none;
+  background-color: #0b0b0b;
+}
+.dropdownOptions span {
+  padding:10px;
+  cursor: pointer;
+}
+.navbarContainer .right {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.navbarContainer .right a, .navbarContainer .right span {
+  font-size: 16px;
+  color:white;
+  text-decoration: none;
+}
+.navbarContainer .right a:hover {
+  color:#b3b3b3;
+}
+.navbarContainer .right svg {
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.navbarContainer .right svg:hover { 
+  color:#b3b3b3;
+}
+.navbarContainer .profileImage {
+  width: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.registerButton {
+  background-color: #5FE3F2;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  padding:7px 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.registerButton:hover {
+  background: #59d4e7;
+}
+.registerButton a {
+  font-size: 16px;
+}
+.profileLinks {
+  display: none;
+  background-color: #0b0b0b;
+  max-width: 100px;
+  padding: 2px;
+}
+.profileLinks span {
+  display: inline-block;
+  padding:5px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+.profileLinks span:hover {
+  color:#b3b3b3;
+}
+.profileLinks span:first-letter {
+  text-transform:capitalize;
+}
+.loggedUser:hover .profileLinks {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 5px;
+}
+
+@media (max-width:1000px) {
+  .navbarContainer {
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width:795px) {
+  .navbarContainer .left a {
+    margin-right: 15px;
+    font-size: 14px;
+  }
+  .navbarContainer .right a, .navbarContainer .right span {
+    font-size: 14px;
+  }
+  .registerButton {
+    padding:6px 13px;
+  }
+  .registerButton a {
+    font-size: 14px !important;
+  }
+  .navbarContainer .right svg {
+    display: none;
+  }
+  .navbarContainer .right .navKids {
+    display: none;
+  }
+}
+
+@media (max-width:650px) {
+  .reactflixLogo{
+    font-size: 1.5rem;
+  }
+  .navbarContainer .left a {
+    font-size: 12px;
+  }
+  .navbarContainer .right a, .navbarContainer .right span {
+    font-size: 12px;
+  }
+  .registerButton {
+    padding:5px 13px;
+  }
+  .registerButton a {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width:510px) {
+  .navbarContainer .leftLinks span {
+    display: none;
+  }
+  .leftLinks {
+    display: none;
+  }
+  .leftCollapsed {
+    display: flex;
+    margin-left: -10px;
+  }
+  .dropdownOptions {
+    margin-left: 20px;
+  }
+  .dropdownOptions span {
+    padding:5px;
+    cursor: pointer;
+  }
+  .navbarContainer .right {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width:475px) {
+  .navbarContainer {
+    padding: 0px 20px;
+  }
+  .reactflixLogo{
+    font-size: 1.25rem;
+  }
+  .registerButton {
+    padding:5px 12px;
+  }
+  .registerButton a {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width:375px) {
+  .navbarContainer {
+    padding: 0px 20px;
+  }
+  .reactflixLogo{
+    font-size: 1.1rem;
+  }
+  .registerButton {
+    padding:4px 12px;
+  }
+}

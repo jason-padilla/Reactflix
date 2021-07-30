@@ -1,0 +1,32 @@
+.listItem {
+  width: 295px;
+  background-color: transparent;
+  margin-right:10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.listItem:hover {
+  transform: translateY(-15px);
+  transition: all 1s ease;
+}
+h1 {
+  color:white;
+}
+
+@media(max-width: 1000px) {
+  .listItem {
+    width: 225px;
+  }
+}
+
+@media(max-width: 511px) {
+  .listItem {
+    width: 150px;
+  }
+}
+
+@media(max-width: 400px) {
+  .listItem {
+    width: 120px;
+  }
+}

@@ -1,0 +1,30 @@
+.home {
+  background-color: #0b0b0b;
+}
+.rowsContainer {
+  position: relative;
+  top:-150px;
+}
+.spinnerBorder {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: .25em solid #5FE3F2;;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinnerBorder .75s linear infinite;
+  animation: spinnerBorder .75s linear infinite;
+}
+
+@media(max-height: 820px)
+{
+  .rowsContainer {
+    top:-75px;
+  }
+}
+@media(max-height: 600px) {
+  .info {
+    bottom: -50px;
+  }
+}

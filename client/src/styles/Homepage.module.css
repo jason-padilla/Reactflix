@@ -1,0 +1,286 @@
+.homepage {
+  width: 100vw;
+  height: 100vh;
+  color:white;
+  background-color: #0b0b0b;
+}
+.homeNav {
+  width: 100%;
+  color:white;
+  position: fixed;
+  z-index: 99;
+  top:0;
+  background: linear-gradient(to top,transparent 0%, rgb(0,0,0,0.6) 50%); 
+}
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+  height: 70px;
+}
+.reactflixLogo{
+  color: #5FE3F2;
+  margin-right: 30px
+}
+.left {
+  display: flex;
+  align-items: center;
+}
+.left span {
+  margin-right: 20px;
+}
+.right {
+  display: flex;
+  align-items: center;
+}
+.right a {
+  color:white;
+  text-decoration: none;
+}
+.signBtn {
+  background-color: #5FE3F2;
+  border: none;
+  border-radius: 5px;
+  padding:7px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.signBtn:hover {
+  background: #59d4e7;
+}
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.mainContainer h1 {
+  font-size: 4rem;
+}
+.mainContainer h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+.mainContainer h3 {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+}
+.mainContainer a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #757575
+}
+.mainContainer a:hover {
+  color: #606060
+}
+.mainHeader {
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+.getStartedCtr {
+  display:flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.emailInput {
+  min-width: 500px;
+  min-height: 66px !important;
+  padding:0px 10px;
+  font-size: 1.5rem;
+}
+.startedButton {
+  margin: 0 !important;
+  border:none;
+  font-size: 1.875rem;
+  min-height: 70px;
+  padding: 10px 25px;
+  background-color: #5FE3F2;
+  color:white;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.startedButton:hover {
+  background: #59d4e7;
+}
+.rightArrow {
+  height: 25px;
+  width: 25px;
+}
+
+@media (max-width:1000px) {
+  .navContainer {
+    padding: 0px 40px;
+  }
+  .mainHeader {
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+  }
+  .mainContainer h1 {
+    font-size: 3rem;
+  }
+  .mainContainer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .mainContainer h3 {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .emailInput {
+    min-width: 400px;
+    min-height: 50px !important;
+    font-size: 1.25rem;
+  }
+  .startedButton {
+    font-size: 1.5rem;
+    min-height: 53px;
+  }
+  .rightArrow {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media (max-width:650px) {
+  .navContainer {
+    padding: 0px 30px;
+  }
+  .signBtn {
+    padding:7px 14px;
+    font-size: 16px;
+  }
+  .reactflixLogo{
+    font-size: 1.5rem;
+  }
+  .homepage {
+    height: 90vh;
+  }
+  .mainContainer {
+    height: 90%;
+  }
+  .mainHeader {
+    max-width: 400px;
+    margin-bottom: 1rem;
+  }
+  .mainContainer h1 {
+    font-size: 2rem;
+  }
+  .mainContainer h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .mainContainer h3 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .emailInput {
+    min-width: 300px;
+    min-height: 40px !important;
+    font-size: 1rem;
+  }
+  .startedButton {
+    font-size: 1rem;
+    min-height: 43px;
+  }
+  .rightArrow {
+    height: 15px;
+    width: 15px;
+  }
+  .mainContainer a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:475px) {
+  .navContainer {
+    padding: 0px 20px;
+  }
+  .signBtn {
+    padding:7px 14px;
+    font-size: 14px;
+  }
+  .reactflixLogo{
+    font-size: 1.25rem;
+  }
+  .mainHeader {
+    max-width: 350px;
+  }
+  .mainContainer h1 {
+    font-size: 1.75rem;
+  }
+  .mainContainer h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .mainContainer h3 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .emailInput {
+    min-width: 200px;
+    min-height: 32px !important;
+    font-size: 1rem;
+  }
+  .startedButton {
+    font-size: 1rem;
+    padding: 6px 12px;
+    min-height: 36px;
+  }
+  .rightArrow {
+    display: none;
+  }
+}
+
+@media (max-width:375px) {
+  .navContainer {
+    padding: 0px 20px;
+  }
+  .signBtn {
+    padding:6px 12px;
+    font-size: 12px;
+  }
+  .reactflixLogo{
+    font-size: 1.1rem;
+  }
+  .homepage {
+    height: 100vh;
+  }
+  .mainHeader {
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+  .mainContainer h1 {
+    font-size: 1.5rem;
+  }
+  .mainContainer h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .mainContainer h3 {
+    font-size: .75rem;
+    margin-bottom: 1.5rem;
+  }
+  .emailInput {
+    min-width: 170px;
+    min-height: 32px !important;
+    font-size: .75rem;
+  }
+  .startedButton {
+    font-size: .75rem;
+    padding: 6px 12px;
+    min-height: 36px;
+  }
+  .rightArrow {
+    display: none;
+  }
+  .mainContainer a {
+    font-size: 12px;
+  }
+}
